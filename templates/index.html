@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Chemistry AI Agent</title>
-    https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-</head>
-<body>
-    <h1>Welcome to the Chemistry AI Agent</h1>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+ AI Agent</h1>
     <p>Ask a chemistry question and see math rendered like this:</p>
     <p>$$E = mc^2$$</p>
 
     <script>
       window.addEventListener('load', () => {
-        if (window.MathJax) {
-         .typesetPromise();
+        if (window.MathJax && MathJax.typesetPromise) {
+          MathJax.typesetPromise();
         }
       });
     </script>
 </body>
 </html>
-
-
