@@ -3,52 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Chemistry AI Agent</title>
-    <script id="MathJax-script" async
-      src="https://cdn.jsdelivr.nete>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f9;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        form {
-            margin-top: 20px;
-        }
-        input[type="text"] {
-            width: 60%;
-            padding: 10px;
-            font-size: 16px;
-        }
-        input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin-left: 10px;
-        }
-        .response {
-            margin-top: 30px;
-            padding: 15px;
-            background-color: #e8f0fe;
-            border-left: 5px solid #4285f4;
-        }
-    </style>
+    https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 </head>
 <body>
     <h1>Welcome to the Chemistry AI Agent</h1>
-    <p>Ask a chemistry-related question below. The will respond and render any math equations using MathJax.</p>
-
-    <form action="/ask" method="post">
-        <input type="text" name="question" placeholder="Enter your chemistry question here..." required>
-        <input type="submit" value="Ask">
-    </form>
-
-    {% if response %}
-    <div class="response">
-        <h3>AI Response:</h3>
-        <p>{{ response|safe }}</p>
-    </div>
-    {% endif %}
+    <p>Ask a chemistry question and see math rendered like this:</p>
+    <p>$$E = mc^2$$</p>
 </body>
 </html>
-
