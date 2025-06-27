@@ -9,5 +9,12 @@
     <h1>Welcome to the Chemistry AI Agent</h1>
     <p>Ask a chemistry question and see math rendered like this:</p>
     <p>$$E = mc^2$$</p>
+<script>
+  window.addEventListener('load', () => {
+    if (window.MathJax) {
+      MathJax.typesetPromise();
+    }
+  });
+</script>
 </body>
 </html>
