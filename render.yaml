@@ -1,6 +1,7 @@
 services:
-  - type: web
-    name: chemistry-ai-agent
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
+  - type: web
+    name: chemistry-ai-agent
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    plan: free
